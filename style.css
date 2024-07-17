@@ -1,0 +1,134 @@
+.text-center {
+    font-size: 30px;
+}
+
+.aboutus {
+    margin-top: 10px;
+}
+
+.carousel-caption h1 {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.carousel-caption .btn{
+    margin-bottom: 130px;
+}
+
+.img-about {
+    width: 100%;
+    height: auto; /* Ubah height menjadi auto agar gambar tetap proporsional */
+}
+
+.img-content {
+    width: 100%;
+    height: 100% !important;
+}
+
+.para-content-about {
+    font-size: 20px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 74);
+}
+
+@media (max-width: 767.98px) {
+    .text-center {
+        font-size: 24px;
+    }
+
+    .para-content-about {
+        font-size: 18px;
+    }
+}
+
+.gallery-title {
+    margin-top: 138px;
+}
+
+.texs .p{
+    font-size: 9px;
+}
+
+.gallery-item {
+    transition: transform 0.2s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.card-bg{
+    background-color: #F5F7F8; 
+}
+
+.text-overlay {
+    position: relative;
+}
+
+.text-overlay img {
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.footer .list-unstyled {
+    padding: 0;
+    list-style: none;
+}
+
+.footer .list-unstyled li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .list-unstyled li a:hover {
+    color: #007bff;
+}
+
+.footer .footer-title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer .footer-title, .footer .list-unstyled li a {
+    color: #aaa;
+}
+
+.footer form input[type="email"] {
+    padding: 8px;
+    margin-right: 8px;
+    border: none;
+}
+
+.footer form input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-title{
+    margin-top: 100px;
+    color: #fff;
+}

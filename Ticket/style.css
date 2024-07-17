@@ -1,0 +1,283 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header img {
+    float: left;
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+header img:hover{
+  scale: 1.1;
+  transform: rotate(10deg);
+}
+
+header {
+    background: transparent;
+    color: #fff;
+    position: relative;
+	border-bottom: 1px solid #444;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 8px 8px 0 0;
+}
+
+header nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav li {
+	display: inline-block;
+    transition: 0.2s;
+}
+
+header nav li:hover{
+    scale: 1.1;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ff7b00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+.body-background {
+    background-image: url('img/beautiful-mountain-landscape-before-sunset-picjumbo-com.jpg'); /* Path gambar latar belakang */
+    background-size:center;
+    background-repeat:no-repeat;
+    background-position: center center;
+    color: #ffffff; /* Warna teks */
+    font-family: Arial, sans-serif; /* Font family untuk seluruh halaman */
+}
+.h12{
+    padding-top: 15%;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.h1 {
+    font-size: 3rem; /* Ukuran font untuk judul */
+    color: #333; /* Warna teks judul */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeInUp 1s ease-out forwards; /* Animasi fadeInUp selama 1 detik */
+}
+
+.h2 {
+    font-size: 1.5rem; /* Ukuran font untuk teks */
+    color: #555; /* Warna teks */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeInUp 1s ease-out forwards; /* Animasi fadeInUp selama 1 detik */
+    animation-delay: 0.5s; /* Delay animasi 0.5 detik setelah h1 muncul */
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px); /* Mulai dengan translasi 20px ke bawah */
+        opacity: 0; /* Mulai dengan opacity 0 */
+    }
+    100% {
+        transform: translateY(0); /* Akhiri translasi ke posisi awal */
+        opacity: 1; /* Akhiri dengan opacity 1 */
+    }
+}
+.container1{
+    margin: 0 auto; /* Margin otomatis pada sisi kiri dan kanan */
+    padding: 20px; /* Padding konten utama */
+}
+
+.container2 {
+    max-width: 1200px; /* Lebar maksimum konten utama */
+    margin: 0 auto; /* Margin otomatis pada sisi kiri dan kanan */
+    padding: 20px; /* Padding konten utama */
+}
+
+.section-title {
+    font-size: 1.5rem; /* Ukuran font untuk judul section */
+    margin-bottom: 20px; /* Jarak bawah dari judul section */
+}
+
+.flight-search {
+    color: #fff;
+    backdrop-filter: blur(5px);
+    padding-right: auto;
+    padding: 75px; /* Padding dari bagian pencarian */
+    border-style: solid;
+    border-color: #333;
+    border-radius: 10px; /* Radius sudut bagian pencarian */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Bayangan bagian pencarian */
+    margin-top: 10px;
+}
+
+.form-row {
+    display: flex; /* Tampilkan dalam flexbox */
+    justify-content: space-between; /* Ratakan ke sisi kanan dan kiri */
+}
+
+.form-group {
+    flex: 1; /* Item flex akan memenuhi ruang yang tersedia */
+    margin-right: 10px; /* Jarak kanan antar form group */
+}
+
+.form-control {
+    width: 100%; /* Lebar form control */
+    padding: 10px; /* Padding dari form control */
+    font-size: 1rem; /* Ukuran font untuk form control */
+    border: 1px solid #ccc; /* Border form control */
+    border-radius: 5px; /* Radius sudut form control */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Warna background tombol */
+    border: none; /* Tanpa border */
+    color: white; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding dari tombol */
+    cursor: pointer; /* Ubah pointer saat hover */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna background */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Warna background saat hover */
+}
+
+.hotel-booking {
+    padding-right: auto;
+    max-width: 1200px; /* Lebar maksimum konten utama */
+    margin: 0 auto; /* Margin otomatis pada sisi kiri dan kanan */
+    padding: 20px; /* Padding konten utama */
+    color: #fff;
+    backdrop-filter: blur(5px);
+    padding: 75px; /* Padding dari bagian pencarian */
+    border-style: solid;
+    border-color: #333;
+    border-radius: 10px; /* Radius sudut bagian pencarian */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Bayangan bagian pencarian */
+    margin-top: 10px;
+}
+
+.hotel-booking .form-row {
+    display: flex; /* Tampilkan dalam flexbox */
+    justify-content: space-between; /* Ratakan ke sisi kanan dan kiri */
+}
+
+.hotel-booking .form-group {
+    flex: 1; /* Item flex akan memenuhi ruang yang tersedia */
+    margin-right: 10px; /* Jarak kanan antar form group */
+}
+
+.hotel-booking .form-group label {
+    display: block; /* Tampilkan label sebagai block */
+    margin-bottom: 5px; /* Jarak bawah dari label */
+}
+
+.hotel-booking .form-control {
+    width: 100%; /* Lebar form control */
+    padding: 10px; /* Padding dari form control */
+    font-size: 1rem; /* Ukuran font untuk form control */
+    border: 1px solid #ccc; /* Border form control */
+    border-radius: 5px; /* Radius sudut form control */
+}
+
+.hotel-booking .btn-primary {
+    background-color: #007bff; /* Warna background tombol */
+    border: none; /* Tanpa border */
+    color: white; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding dari tombol */
+    cursor: pointer; /* Ubah pointer saat hover */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna background */
+}
+
+.hotel-booking .btn-primary:hover {
+    background-color: #0056b3; /* Warna background saat hover */
+}
+
+/*tambahan css */
+.seat-selection, .booking-actions {
+    color: #fff;
+    backdrop-filter: blur(5px);
+    padding: 75px;
+    border-style: solid;
+    border-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    display: none; /* Mulai dengan display none, akan ditampilkan saat diperlukan */
+}
+
+.seat-selection .form-group, .booking-actions .form-group {
+    margin-bottom: 20px;
+}
+
+#flight-results, #hotel-results {
+    margin-top: 20px;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+
+.search-results ul {
+    list-style-type: none;
+}
+
+.search-results ul li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.search-results ul li:hover {
+    background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 768px) {
+	main {
+	  flex-direction: column;
+	}
+	#content {
+	  flex: 1;
+	}
+	aside.sidebar {
+	  margin-left: 0;
+	}
+}
+
+.navbar-brand{
+    text-align: center;
+}
